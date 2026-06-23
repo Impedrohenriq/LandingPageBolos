@@ -59,7 +59,7 @@ export function Hero() {
               {/* IMAGEM REAL DO BOLO (Com zoom suave ao passar o mouse) */}
               <img 
                 src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop" 
-                alt="Bolo de Casamento Botânico Maison Altmann"
+                alt="Bolo de Casamento Botânico Ateliê Altmann"
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-1000 ease-out"
               />
 

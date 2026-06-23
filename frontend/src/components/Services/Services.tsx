@@ -3,7 +3,7 @@ export function Services() {
   const bolosVitrine = [
     {
       id: 1,
-      nome: "White Wedding Cake",
+      nome: "Bolo Nupcial Alva",
       preco: "R$ 840,00",
       // Foto temporária de alta definição do Unsplash
       imagem: "https://images.unsplash.com/photo-1535141192574-5d4897c13136?q=80&w=800&auto=format&fit=crop"
@@ -34,7 +34,7 @@ export function Services() {
         
         {/* Cabeçalho da Seção */}
         <div className="text-center space-y-3 mb-20">
-          <span className="font-script text-bisou-terracota text-4xl block -mb-2">Gâteaux de Mariage</span>
+          <span className="font-script text-bisou-terracota text-4xl block -mb-2">Bolos de Matrimônio</span>
           <h2 className="text-4xl sm:text-5xl font-serif font-light uppercase tracking-widest text-bisou-dark">
             Nossas Assinaturas
           </h2>

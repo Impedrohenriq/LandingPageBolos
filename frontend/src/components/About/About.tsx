@@ -10,7 +10,7 @@ export function About() {
           <div className="w-4/5 aspect-[3/4] bg-stone-200 overflow-hidden shadow-xl group cursor-pointer relative">
             <img 
               src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=800&auto=format&fit=crop" 
-              alt="Mãos artesãs Maison Altmann" 
+              alt="Mãos artesãs Ateliê Altmann" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out"
             />
             <div className="absolute inset-0 bg-bisou-dark/10 mix-blend-overlay pointer-events-none" />
@@ -31,7 +31,7 @@ export function About() {
         <div className="lg:col-span-6 space-y-8 lg:pl-8">
           
           <div>
-            <span className="font-script text-bisou-terracota text-4xl block -mb-2">L'Histoire de la Maison</span>
+            <span className="font-script text-bisou-terracota text-4xl block -mb-2">L'Histoire do Ateliê</span>
             <h2 className="text-4xl sm:text-5xl font-serif font-light uppercase tracking-widest text-bisou-dark leading-[1.1]">
               A Poesia de <br />
               <span className="font-normal italic">Fazer Doce</span>
@@ -40,10 +40,10 @@ export function About() {
 
           <div className="space-y-4 font-sans font-light text-bisou-dark/80 text-base sm:text-lg leading-relaxed">
             <p>
-              Nossa jornada começou em uma pequena cozinha caseira, movida pelo aroma inconfundível de fava de baunilha e manteiga <span className="italic">noisette</span>. O que era uma herança de família transformou-se em uma busca obsessiva pela perfeição de texturas.
+              Nossa jornada começou em uma pequena cozinha caseira, onde o ar se impregnava de notas da mata: fava de cumaru e cacau de origem, mel de jataí e o perfume da priprioca. O que era uma herança de família transformou-se numa busca pela textura perfeita.
             </p>
             <p>
-              Não utilizamos atalhos industriais. Cada massa repousa o tempo exato de sua maturação, cada recheio é apurado lentamente em tachos de cobre e cada flor botânica é disposta com a precisão de um ourives.
+              Não tomamos atalhos industriais; cada massa descansa o tempo necessário, cada recheio é apurado em tachos de cobre com castanha-do-pará ou cupuaçu, e cada flor botânica é disposta como um poema.
             </p>
           </div>
 

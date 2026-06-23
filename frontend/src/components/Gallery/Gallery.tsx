@@ -3,7 +3,7 @@ export function Gallery() {
   const fotosGaleria = [
     {
       id: 1,
-      legenda: "Coleção Blanche",
+      legenda: "Coleção Alva",
       imagem: "https://images.unsplash.com/photo-1535141192574-5d4897c13136?q=80&w=800&auto=format&fit=crop"
     },
     {
@@ -13,12 +13,12 @@ export function Gallery() {
     },
     {
       id: 3,
-      legenda: "Texturas de Baunilha",
+      legenda: "Texturas de Cumaru",
       imagem: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop"
     },
     {
       id: 4,
-      legenda: "Pâtisserie Fina",
+      legenda: "Confeitaria Artesanal Fina",
       imagem: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=800&auto=format&fit=crop"
     },
     {
@@ -42,11 +42,11 @@ export function Gallery() {
         <div className="mb-20 flex flex-col items-center text-center border-b border-bisou-border pb-12">
           
           <span className="font-script text-bisou-terracota text-4xl block -mb-1">
-            @maisonaltmann
+            @ateliealtmann
           </span>
           
           <h2 className="text-4xl sm:text-5xl font-serif font-light uppercase tracking-widest text-bisou-dark">
-            Journal Visuel
+            Diário Botânico
           </h2>
 
           <a 
@@ -92,7 +92,7 @@ export function Gallery() {
                 </span>
 
                 <span className="text-[9px] uppercase tracking-[0.2em] text-bisou-rose/80 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-150">
-                  Maison Altmann
+                  Ateliê Altmann
                 </span>
 
               </div>
