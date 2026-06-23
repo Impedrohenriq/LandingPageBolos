@@ -10,7 +10,7 @@ export function About() {
           <div className="w-4/5 aspect-[3/4] bg-stone-200 overflow-hidden shadow-xl group cursor-pointer relative">
             <img 
               src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=800&auto=format&fit=crop" 
-              alt="Mãos artesãs Ateliê Altmann" 
+              alt="Mãos artesãs Ateliê de Bolos" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out"
             />
             <div className="absolute inset-0 bg-bisou-dark/10 mix-blend-overlay pointer-events-none" />
@@ -31,7 +31,7 @@ export function About() {
         <div className="lg:col-span-6 space-y-8 lg:pl-8">
           
           <div>
-            <span className="font-script text-bisou-terracota text-4xl block -mb-2">L'Histoire do Ateliê</span>
+            <span className="font-script text-bisou-terracota text-4xl block -mb-2">História do Ateliê de Bolos</span>
             <h2 className="text-4xl sm:text-5xl font-serif font-light uppercase tracking-widest text-bisou-dark leading-[1.1]">
               A Poesia de <br />
               <span className="font-normal italic">Fazer Doce</span>

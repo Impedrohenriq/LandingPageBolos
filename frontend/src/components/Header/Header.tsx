@@ -12,7 +12,7 @@ export function Header() {
 
         {/* LOGO CENTRAL (Estilo Bisou) */}
         <div className="text-center absolute left-1/2 -translate-x-1/2">
-          <span className="font-script text-bisou-terracota text-2xl block -mb-3">Ateliê</span>
+          <span className="font-script text-bisou-terracota text-2xl block -mb-3">Ateliê de</span>
           <span className="font-serif text-3xl font-bold tracking-widest uppercase">Bolos</span>
         </div>
 

@@ -4,7 +4,7 @@ export function Gallery() {
     {
       id: 1,
       legenda: "Coleção Alva",
-      imagem: "https://images.unsplash.com/photo-1535141192574-5d4897c13136?q=80&w=800&auto=format&fit=crop"
+      imagem: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?q=80&w=503&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ export function Gallery() {
         <div className="mb-20 flex flex-col items-center text-center border-b border-bisou-border pb-12">
           
           <span className="font-script text-bisou-terracota text-4xl block -mb-1">
-            @ateliealtmann
+            @ateliedebolos
           </span>
           
           <h2 className="text-4xl sm:text-5xl font-serif font-light uppercase tracking-widest text-bisou-dark">
@@ -92,7 +92,7 @@ export function Gallery() {
                 </span>
 
                 <span className="text-[9px] uppercase tracking-[0.2em] text-bisou-rose/80 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-150">
-                  Ateliê Altmann
+                  Ateliê
                 </span>
 
               </div>

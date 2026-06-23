@@ -1,80 +1,82 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
 export function Services() {
-  // Lista de produtos espelhando exatamente os 4 bolos da sua imagem de referência
-  const bolosVitrine = [
-    {
-      id: 1,
-      nome: "Bolo Nupcial Alva",
-      preco: "R$ 840,00",
-      // Foto temporária de alta definição do Unsplash
-      imagem: "https://images.unsplash.com/photo-1535141192574-5d4897c13136?q=80&w=800&auto=format&fit=crop"
+const bolos = [
+    { 
+      nome: "Bolo Alva", 
+      preco: "R$ 840", 
+      resumo: "Um abraço em forma de bolo. Perfeito para casamentos ao ar livre, traz leveza e frescor com o toque exclusivo da fava de cumaru.", 
+      // Nova imagem selecionada para o Bolo Alva (estética clara e artesanal)
+      imagem: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?q=80&w=503&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
-    {
-      id: 2,
-      nome: "Marble Wedding Cake With Fresh Flowers",
-      preco: "R$ 1.500,00",
-      imagem: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop"
+    { 
+      nome: "Bolo Botânico", 
+      preco: "R$ 1.500", 
+      resumo: "Celebrações intimistas pedem sofisticação. Texturas aveludadas com infusão de mel de jataí e flores comestíveis.", 
+      imagem: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop" 
     },
-    {
-      id: 3,
-      nome: "Elegant Wedding Cake",
-      preco: "R$ 680,00",
-      imagem: "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=800&auto=format&fit=crop"
+    { 
+      nome: "Bolo Sereno", 
+      preco: "R$ 950", 
+      resumo: "A definição de equilíbrio. Massa de cacau de origem com camadas de cupuaçu. Traz uma experiência sensorial profunda.", 
+      imagem: "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=800&auto=format&fit=crop" 
     },
-    {
-      id: 4,
-      nome: "Wedding Cake With Flowers",
-      preco: "R$ 2.100,00",
-      imagem: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=800&auto=format&fit=crop"
+    { 
+      nome: "Bolo Festim", 
+      preco: "R$ 1.200", 
+      resumo: "Para momentos de alegria vibrante. Um bolo autoral que combina castanha-do-pará e frutas nativas em perfeita harmonia.", 
+      imagem: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=800&auto=format&fit=crop" 
     }
   ];
 
   return (
-    <section id="servicos" className="py-32 bg-bisou-bg relative border-b border-bisou-border/60">
+    <section id="servicos" className="py-32 bg-bisou-bg border-b border-bisou-border/60">
       <div className="max-w-7xl mx-auto px-8">
-        
-        {/* Cabeçalho da Seção */}
-        <div className="text-center space-y-3 mb-20">
-          <span className="font-script text-bisou-terracota text-4xl block -mb-2">Bolos de Matrimônio</span>
-          <h2 className="text-4xl sm:text-5xl font-serif font-light uppercase tracking-widest text-bisou-dark">
-            Nossas Assinaturas
-          </h2>
-          <div className="w-12 h-[1px] bg-bisou-terracota mx-auto mt-4" />
+        <div className="text-center mb-16">
+          <span className="font-script text-bisou-terracota text-4xl block">Nossas Criações</span>
+          <h2 className="text-4xl font-serif uppercase tracking-widest text-bisou-dark">Cardápio Autoral</h2>
         </div>
-
-        {/* A Grade de 4 colunas exatamente igual ao print */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
-          {bolosVitrine.map((bolo) => (
-            // A classe 'group' aqui é o pulo do gato! Ela avisa: "Se passarem o mouse em qualquer lugar aqui dentro, ative o hover de todo mundo"
-            <div key={bolo.id} className="group cursor-pointer flex flex-col">
-              
-              {/* Container da Imagem com Proporção 3:4 (Editorial) */}
-              <div className="w-full aspect-[3/4] overflow-hidden bg-bisou-rose relative">
+        
+        <Swiper 
+          modules={[Navigation]} 
+          navigation 
+          loop={true}
+          spaceBetween={30} 
+          slidesPerView={1}
+          breakpoints={{ 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }}
+          className="px-4"
+        >
+          {bolos.map((bolo, i) => (
+            <SwiperSlide key={i} className="group cursor-pointer">
+              {/* Imagem com efeito Hover e Botão Detalhes */}
+              <div className="relative aspect-[3/4] overflow-hidden bg-bisou-rose">
                 <img 
                   src={bolo.imagem} 
                   alt={bolo.nome}
-                  // duration-700 ease-out deixa o zoom lento e extremamente requintado
-                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
                 />
                 
-                {/* Véu super suave que aparece por cima da foto ao passar o mouse */}
-                <div className="absolute inset-0 bg-bisou-dark/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                {/* Botão Detalhes (só aparece no hover) */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-bisou-dark/20 backdrop-blur-[2px]">
+                  <button className="bg-white text-bisou-dark px-8 py-3 uppercase text-[10px] tracking-[0.2em] font-bold hover:bg-bisou-terracota hover:text-white transition-colors">
+                    Ver Detalhes
+                  </button>
+                </div>
               </div>
-
-              {/* Textos e Preços abaixo da foto */}
-              <div className="text-center pt-6 px-2 flex-grow flex flex-col justify-between space-y-1">
-                <h3 className="text-xs uppercase tracking-[0.18em] font-medium text-bisou-dark leading-snug group-hover:text-bisou-terracota transition-colors duration-300">
-                  {bolo.nome}
-                </h3>
-                
-                <p className="font-serif italic text-sm text-bisou-dark/70 tracking-wide pt-1">
-                  {bolo.preco}
-                </p>
+              
+              {/* Nome e Preço */}
+              <div className="p-6 text-center">
+                <h3 className="font-serif text-xl text-bisou-dark">{bolo.nome}</h3>
+                <p className="font-sans italic text-sm text-bisou-terracota mt-1">{bolo.preco}</p>
+                {/* Resumo do bolo (aparece fixo abaixo) */}
+                <p className="text-[11px] text-bisou-dark/60 mt-4 leading-relaxed px-4">{bolo.resumo}</p>
               </div>
-
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
-
+        </Swiper>
       </div>
     </section>
   );

@@ -24,7 +24,7 @@ export function Hero() {
           </h1>
 
           <p className="font-sans font-light text-bisou-dark/80 text-lg max-w-md mx-auto lg:mx-0 leading-relaxed">
-            Elevando a confeitaria artesanal à categoria de arte. Sabores botânicos, texturas aveludadas e design minimalista para os seus momentos mais raros.
+            Elevação da confeitaria ao gesto artístico: notas de fava de cumaru, cacau de origem e mel silvestre se encontram em texturas aveludadas para celebrar momentos singulares.
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
