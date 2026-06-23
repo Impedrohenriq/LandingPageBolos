@@ -13,7 +13,7 @@ const bolos = [
       imagem: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?q=80&w=503&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     { 
-      nome: "Bolo Botânico", 
+      nome: "Bolo ", 
       preco: "R$ 1.500", 
       resumo: "Celebrações intimistas pedem sofisticação. Texturas aveludadas com infusão de mel de jataí e flores comestíveis.", 
       imagem: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop" 

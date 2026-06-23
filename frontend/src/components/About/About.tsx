@@ -20,7 +20,7 @@ export function About() {
           <div className="absolute -bottom-10 right-0 sm:right-4 w-3/5 aspect-square bg-stone-300 overflow-hidden shadow-2xl border-8 border-bisou-bg group cursor-pointer">
             <img 
               src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=800&auto=format&fit=crop" 
-              alt="Detalhe botânico do bolo" 
+              alt="Detalhe do bolo" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out"
             />
           </div>
@@ -54,7 +54,7 @@ export function About() {
                 100%
               </span>
               <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-bisou-dark/70 mt-2 block">
-                Botânico & Natural
+                 & Natural
               </span>
             </div>
 

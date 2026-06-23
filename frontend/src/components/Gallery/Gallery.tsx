@@ -8,7 +8,7 @@ export function Gallery() {
     },
     {
       id: 2,
-      legenda: "Casamento Botânico",
+      legenda: "Casamento ",
       imagem: "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=800&auto=format&fit=crop"
     },
     {
@@ -46,7 +46,7 @@ export function Gallery() {
           </span>
           
           <h2 className="text-4xl sm:text-5xl font-serif font-light uppercase tracking-widest text-bisou-dark">
-            Diário Botânico
+            Diário 
           </h2>
 
           <a 
