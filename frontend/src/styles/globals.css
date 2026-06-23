@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&family=Clicker+Script&display=swap');
+
+@theme {
+  /* Cores exatas extraídas do Bisou */
+  --color-bisou-bg: #F7F4EF;       /* O fundo areia/creme */
+  --color-bisou-dark: #37221E;     /* O marrom super escuro dos textos */
+  --color-bisou-rose: #F3EBE6;     /* O fundo rosa pastel dos cards */
+  --color-bisou-terracota: #C86D51;/* O laranja queimado dos botões */
+  --color-bisou-border: #E8DFD8;   /* A cor das linhas finas */
+
+  /* As 3 fontes do luxo */
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Jost', sans-serif;
+  --font-script: 'Clicker Script', cursive;
+}
+
+body {
+  background-color: var(--color-bisou-bg);
+  color: var(--color-bisou-dark);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Utilitário para traços finos decorativos */
+.bisou-line {
+  height: 1px;
+  background-color: var(--color-bisou-border);
+}

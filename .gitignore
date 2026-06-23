@@ -1,0 +1,17 @@
+# Dependências do Node (ignora em qualquer subpasta, como backend e frontend)
+**/node_modules/
+
+# Arquivos de ambiente local / Segredos (como o seu backend/.env)
+**/.*env
+.env
+.env.local
+
+# Logs do Node
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
