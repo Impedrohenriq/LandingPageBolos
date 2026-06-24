@@ -1,8 +1,13 @@
-import { Router } from "express";
-import { health } from "../controllers/health.controller.js";
+import { Router } from 'express';
+import contentRoutes from './content.routes.js'; // <-- .js aqui
 
-const router = Router();
+const routes = Router();
 
-router.get("/health", health);
+routes.get('/health', (req, res) => {
+  return res.json({ status: 'ok' });
+});
 
-export default router;
+// Montando a rota
+routes.use('/content', contentRoutes); 
+
+export default routes;
