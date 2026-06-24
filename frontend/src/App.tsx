@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Home } from './pages/home/Home'
-import { getBolos, Bolo } from './sanity'
+import { getBolos, type Bolo } from './sanity'
 
 export default function App() {
   const [bolos, setBolos] = useState<Bolo[]>([])
