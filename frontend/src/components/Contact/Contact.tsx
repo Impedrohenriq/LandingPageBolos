@@ -30,7 +30,7 @@ export function Contact() {
 
           {/* Botão Instagram */}
           <a 
-            href="https://instagram.com/maisonaltmann" 
+            href="https://instagram.com/altmann" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group relative border border-bisou-dark py-6 px-8 hover:bg-bisou-dark transition-all duration-500"
