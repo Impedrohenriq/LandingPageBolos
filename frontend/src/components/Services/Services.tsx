@@ -4,7 +4,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import { getBolos, getBolosCarrossel, type Bolo } from '../../sanity';
+import { getBolosCarrossel, type Bolo } from '../../sanity';
 
 export function Services() {
   // O React começa com uma lista vazia, e depois preenche com os dados do Sanity
@@ -25,7 +25,7 @@ useEffect(() => {
         <Swiper 
           modules={[Navigation]} 
           navigation 
-          loop={true}
+          loop={bolos.length > 3}
           spaceBetween={30} 
           slidesPerView={1}
           breakpoints={{ 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }}
