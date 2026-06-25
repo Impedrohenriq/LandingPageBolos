@@ -34,7 +34,7 @@ useEffect(() => {
           {bolos.map((bolo) => (
             <SwiperSlide key={bolo._id} className="group cursor-pointer">
               {/* Imagem com efeito Hover e Botão Detalhes */}
-              <div className="relative aspect-[3/4] overflow-hidden bg-bisou-rose">
+              <div className="relative aspect-3/4 overflow-hidden bg-bisou-rose">
                 
                 {/* AQUI ESTÁ A MÁGICA: puxando imagemUrl do Sanity */}
                 {bolo.imagemUrl && (

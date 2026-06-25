@@ -26,7 +26,7 @@ export function About() {
         <div className="lg:col-span-6 relative px-4 sm:px-10 lg:px-0 mb-12 lg:lg-0">
           
           {/* Foto Principal (Atrás) */}
-          <div className="w-4/5 aspect-[3/4] bg-stone-200 overflow-hidden shadow-xl group cursor-pointer relative">
+          <div className="w-4/5 aspect-3/4 bg-stone-200 overflow-hidden shadow-xl group cursor-pointer relative">
             {data.imagemUrl ? (
               <img 
                 src={data.imagemUrl} 
@@ -80,19 +80,19 @@ export function About() {
           <div className="pt-6 border-t border-bisou-border grid grid-cols-2 gap-8">
             <div>
               <span className="font-serif italic text-4xl sm:text-5xl text-bisou-terracota block leading-none">
-                100%
+                Rápido
               </span>
               <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-bisou-dark/70 mt-2 block">
-                 & Natural
+                 & Prático
               </span>
             </div>
 
             <div>
               <span className="font-serif italic text-4xl sm:text-5xl text-bisou-terracota block leading-none">
-                48h
+                Decorações especiais
               </span>
               <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-bisou-dark/70 mt-2 block">
-                Maturação da Massa
+                &  Sob medida
               </span>
             </div>
           </div>

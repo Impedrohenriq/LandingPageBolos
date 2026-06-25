@@ -24,13 +24,13 @@ export function Hero() {
 
   return (
     <section id="inicio" className="min-h-screen pt-32 pb-20 flex items-center relative overflow-hidden">
-      <div className="absolute top-1/2 right-10 -translate-y-1/2 w-[550px] h-[550px] bg-bisou-rose/50 rounded-full blur-2xl -z-10 hidden lg:block" />
+      <div className="absolute top-1/2 right-10 -translate-y-1/2 w-137.5 h-137.5 bg-bisou-rose/50 rounded-full blur-2xl -z-10 hidden lg:block" />
       <div className="max-w-7xl mx-auto px-8 w-full grid lg:grid-cols-12 gap-12 items-center">
         
         {/* Coluna da Esquerda */}
         <div className="lg:col-span-7 space-y-8 text-center lg:text-left">
           <div className="inline-flex items-center gap-3">
-            <span className="w-8 h-[1px] bg-bisou-terracota inline-block" />
+            <span className="w-8 h-px bg-bisou-terracota inline-block" />
             <span className="text-xs uppercase tracking-[0.25em] text-bisou-terracota font-semibold">{data.tag}</span>
           </div>
 
@@ -45,7 +45,7 @@ export function Hero() {
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
-            <a href="#servicos" className="bg-bisou-dark hover:bg-bisou-terracota text-bisou-bg text-xs uppercase tracking-[0.2em] font-medium px-10 py-5 rounded-none transition-all duration-300 shadow-xl">Explorar Cardápio</a>
+            <a href="#servicos" className="bg-bisou-dark hover:bg-bisou-terracota text-bisou-bg text-xs uppercase tracking-[0.2em] font-medium px-10 py-5 rounded-none transition-all duration-300 shadow-xl">Explorar Catálogo</a>
             <a href="#sobre" className="group text-xs uppercase tracking-[0.2em] font-medium flex items-center gap-2 py-5">
               <span className="border-b border-bisou-dark pb-1 group-hover:border-bisou-terracota group-hover:text-bisou-terracota transition-colors">Nossa Filosofia</span>
             </a>
@@ -54,7 +54,7 @@ export function Hero() {
 
         {/* Coluna da Direita (Imagem Dinâmica) */}
         <div className="lg:col-span-5 flex justify-center relative">
-          <div className="w-[320px] sm:w-[380px] h-[480px] sm:h-[560px] bg-bisou-rose rounded-[200px] p-4 relative shadow-2xl border border-white/60">
+          <div className="w-[320px] sm:w-95 h-120 sm:h-140 bg-bisou-rose rounded-[200px] p-4 relative shadow-2xl border border-white/60">
             <div className="w-full h-full rounded-[180px] overflow-hidden bg-bisou-rose relative group">
               <img src={data.imagemBoloUrl} alt="Bolo Destaque" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-1000 ease-out" />
               <div className="absolute inset-0 bg-bisou-dark/10 mix-blend-overlay pointer-events-none" />

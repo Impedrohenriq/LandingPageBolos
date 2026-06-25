@@ -44,7 +44,7 @@ export function Gallery() {
           {fotos.map((item) => (
             <div 
               key={item._id} 
-              className="group relative overflow-hidden aspect-[4/5] bg-bisou-rose cursor-pointer shadow-sm hover:shadow-2xl transition-shadow duration-500"
+              className="group relative overflow-hidden aspect-4/5 bg-bisou-rose cursor-pointer shadow-sm hover:shadow-2xl transition-shadow duration-500"
             >
               {/* Foto vindo do Sanity */}
               {item.imagemUrl && (
