@@ -2,7 +2,7 @@ import { defineField, defineType } from 'sanity'
 
 export const boloType = defineType({
   name: 'bolo',
-  title: 'Bolo',
+  title: '🎂Carrossel de Bolos',
   type: 'document',
   fields: [
     defineField({
@@ -43,10 +43,11 @@ export const boloType = defineType({
       rows: 3,
     }),
     defineField({
-      name: 'destaque',
-      title: 'Destaque no Carrossel (Swiper)?',
+      name: 'destaqueCarrossel',
+      title: '🌟 Mostrar no Carrossel da Página Inicial?',
       type: 'boolean',
-      initialValue: false,
+      initialValue: false, // Por padrão, o bolo entra desligado
+      description: 'Ligue esta chave para que o bolo apareça na seção "Cardápio Autoral" do site.'
     }),
   ],
 })
