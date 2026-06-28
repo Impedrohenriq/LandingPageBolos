@@ -53,7 +53,7 @@ export async function getBolos(): Promise<Bolo[]> {
   return await sanity.fetch(query);
 }
 
-// 4. Função 3: Bolos do Carrossel (Estrelinha)
+// 4. Função 3: Decorações do Carrossel (Estrelinha)
 export async function getBolosCarrossel(): Promise<Bolo[]> {
   const query = `*[_type == "bolo" && destaqueCarrossel == true]{
     _id,

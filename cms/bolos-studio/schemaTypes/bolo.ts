@@ -47,7 +47,7 @@ export const boloType = defineType({
       title: '🌟 Mostrar no Carrossel da Página Inicial?',
       type: 'boolean',
       initialValue: false, // Por padrão, o bolo entra desligado
-      description: 'Ligue esta chave para que o bolo apareça na seção "Cardápio Autoral" do site.'
+      description: 'Ligue esta chave para que o bolo apareça na seção "Catálogo Autoral" do site.'
     }),
   ],
 })

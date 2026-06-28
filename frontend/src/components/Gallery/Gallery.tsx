@@ -21,7 +21,7 @@ export function Gallery() {
         {/* Cabeçalho Editorial Centralizado */}
         <div className="mb-20 flex flex-col items-center text-center border-b border-bisou-border pb-12">
           <span className="font-script text-bisou-terracota text-4xl block -mb-1">
-            @ateliedebolos
+            @decorações
           </span>
           <h2 className="text-4xl sm:text-5xl font-serif font-light uppercase tracking-widest text-bisou-dark">
             Diário 
@@ -31,7 +31,7 @@ export function Gallery() {
             className="mt-6 text-xs uppercase tracking-[0.2em] font-medium text-bisou-dark hover:text-bisou-terracota transition-all inline-flex items-center gap-1.5 group"
           >
             <span className="border-b border-transparent group-hover:border-bisou-terracota pb-0.5 transition-colors">
-              Acompanhe as fornadas
+              Acompanhe as Novidades
             </span>
             <span className="text-lg group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">
               ↗

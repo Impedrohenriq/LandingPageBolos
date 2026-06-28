@@ -30,7 +30,7 @@ export function About() {
             {data.imagemUrl ? (
               <img 
                 src={data.imagemUrl} 
-                alt="Mãos artesãs Ateliê de Bolos" 
+                alt="Mãos artesãs Ateliê de Decorações" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out"
               />
             ) : (

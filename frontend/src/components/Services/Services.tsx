@@ -19,7 +19,7 @@ useEffect(() => {
       <div className="max-w-7xl mx-auto px-8">
         <div className="text-center mb-16">
           <span className="font-script text-bisou-terracota text-4xl block">Nossas Criações</span>
-          <h2 className="text-4xl font-serif uppercase tracking-widest text-bisou-dark">Cardápio Autoral</h2>
+          <h2 className="text-4xl font-serif uppercase tracking-widest text-bisou-dark">Catálogo Autoral</h2>
         </div>
         
         <Swiper 
