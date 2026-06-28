@@ -56,7 +56,10 @@ export function Hero() {
         <div className="lg:col-span-5 flex justify-center relative">
           <div className="w-[320px] sm:w-95 h-120 sm:h-140 bg-bisou-rose rounded-[200px] p-4 relative shadow-2xl border border-white/60">
             <div className="w-full h-full rounded-[180px] overflow-hidden bg-bisou-rose relative group">
-              <img src={data.imagemBoloUrl} alt="Bolo Destaque" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-1000 ease-out" />
+              <img src={data.imagemBoloUrl} 
+              fetchPriority="high" 
+              alt="Bolo Destaque" 
+              className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-1000 ease-out" />
               <div className="absolute inset-0 bg-bisou-dark/10 mix-blend-overlay pointer-events-none" />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-bisou-terracota text-bisou-bg w-32 h-32 rounded-full flex flex-col items-center justify-center p-2 shadow-lg animate-[spin_20s_linear_infinite] z-10">

@@ -3,7 +3,16 @@ import { Home } from './pages/home/Home'
 export default function App() {
   return (
     <>
-      <Home />
+      {/* O Navbar e o Footer geralmente ficam fora do <main> 
+         porque não são o conteúdo principal da página.
+      */}
+      {/* <Navbar /> */}
+      
+      <main>
+        <Home />
+      </main>
+      
+      {/* <Footer /> */}
     </>
   )
 }

@@ -36,7 +36,7 @@ export interface Hero {
 export async function getHero(): Promise<Hero | null> {
   const query = `*[_type == "hero"][0]{
     tag, titulo1, titulo2, titulo3, descricao,
-    "imagemBoloUrl": imagemBolo.asset->url
+    "imagemBoloUrl": imagemBolo.asset->url+ "?w=1200&auto=format"
   }`
   return await sanity.fetch(query);
 }
@@ -48,11 +48,10 @@ export async function getBolos(): Promise<Bolo[]> {
     nome,
     preco,
     descricao,
-    "imagemUrl": imagem.asset->url
+    "imagemUrl": imagem.asset->url+ "?w=700&auto=format"
   }`
   return await sanity.fetch(query);
 }
-
 // 4. Função 3: Decorações do Carrossel (Estrelinha)
 export async function getBolosCarrossel(): Promise<Bolo[]> {
   const query = `*[_type == "bolo" && destaqueCarrossel == true]{
@@ -60,7 +59,7 @@ export async function getBolosCarrossel(): Promise<Bolo[]> {
     nome,
     preco,
     descricao,
-    "imagemUrl": imagem.asset->url
+    "imagemUrl": imagem.asset->url+ "?w=700&auto=format"
   }`
   return await sanity.fetch(query);
 }
@@ -70,7 +69,7 @@ export async function getFotosGaleria(): Promise<FotoGaleria[]> {
   const query = `*[_type == "fotoGaleria"]{
     _id,
     legenda,
-    "imagemUrl": imagem.asset->url
+    "imagemUrl": imagem.asset->url+ "?w=700&auto=format"
   }`
   return await sanity.fetch(query);
 }
@@ -85,7 +84,7 @@ export async function getAbout(): Promise<About | null> {
   const query = `*[_type == "about"][0]{
     titulo,
     historia,
-    "imagemUrl": imagem.asset->url
+    "imagemUrl": imagem.asset->url+ "?w=700&auto=format"
   }`
   return await sanity.fetch(query);
 }
