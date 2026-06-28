@@ -146,7 +146,7 @@ npm install
 npm run dev
 ```
 
-O Sanity Studio estará disponível em **http://localhost:3333**
+O Sanity Studio estará disponível para o Cliente.
 
 ### Scripts disponíveis (frontend)
 
