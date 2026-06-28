@@ -21,7 +21,7 @@ export interface FotoGaleria {
 export const sanity = createClient({
   projectId: '2y489dqg',
   dataset: 'production',
-  useCdn: false, // false para pegar sempre os dados mais recentes
+  useCdn: true, // false para pegar sempre os dados mais recentes
   apiVersion: '2024-01-01', 
 })
 export interface Hero {
