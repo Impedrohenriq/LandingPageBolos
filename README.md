@@ -136,7 +136,7 @@ npm install
 npm run dev
 ```
 
-O projeto estará disponível em **http://localhost:5173**
+O projeto estará disponível em **https://landing-page-decoracao.vercel.app/**
 
 ### 4. (Opcional) Execute o Sanity Studio
 
@@ -186,7 +186,7 @@ O projeto foi desenvolvido com abordagem **mobile-first** utilizando Tailwind CS
 Desenvolvido por **Pedro Henrique**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Impedrohenriq-181717?style=for-the-badge&logo=github)](https://github.com/Impedrohenriq)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Pedro_Henrique-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/impedrohenriq)
+[![LinkedIn](www.linkedin.com/in/pedro-silva-776a1a3b0)
 
 ---
 
