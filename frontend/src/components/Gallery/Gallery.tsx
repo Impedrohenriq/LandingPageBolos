@@ -59,7 +59,10 @@ export function Gallery() {
               <div className="absolute inset-0 bg-bisou-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center p-6 text-white text-center backdrop-blur-[2px]">
                 
                 <div className="w-14 h-14 rounded-full border border-white/60 flex items-center justify-center mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                  <span className="font-light text-2xl mb-0.5">+</span>
+                  <span className="font-light text-2xl mb-0.5">
+                  <a href="#contato" className="hover:text-bisou-terracota transition-colors">🛒</a>
+                    
+                  </span>
                 </div>
 
                 {/* Legenda vindo do Sanity */}

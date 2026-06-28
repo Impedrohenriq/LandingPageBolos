@@ -48,7 +48,7 @@ useEffect(() => {
                 {/* Botão Detalhes (só aparece no hover) */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-bisou-dark/20 backdrop-blur-[2px]">
                   <button className="bg-white text-bisou-dark px-8 py-3 uppercase text-[10px] tracking-[0.2em] font-bold hover:bg-bisou-terracota hover:text-white transition-colors">
-                    Ver Detalhes
+                              <a href="#contato" className="hover:text-bisou-terracota transition-colors">Ver Detalhes</a>
                   </button>
                 </div>
               </div>
