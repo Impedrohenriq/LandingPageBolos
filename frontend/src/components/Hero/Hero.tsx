@@ -26,7 +26,7 @@ export function Hero() {
     <section id="inicio" className="min-h-screen pt-32 pb-20 flex items-center relative overflow-hidden">
       <div className="absolute top-1/2 right-10 -translate-y-1/2 w-137.5 h-137.5 bg-bisou-rose/50 rounded-full blur-2xl -z-10 hidden lg:block" />
       <div className="max-w-7xl mx-auto px-8 w-full grid lg:grid-cols-12 gap-12 items-center">
-        
+
         {/* Coluna da Esquerda */}
         <div className="lg:col-span-7 space-y-8 text-center lg:text-left">
           <div className="inline-flex items-center gap-3">
@@ -56,14 +56,14 @@ export function Hero() {
         <div className="lg:col-span-5 flex justify-center relative">
           <div className="w-[320px] sm:w-95 h-120 sm:h-140 bg-bisou-rose rounded-[200px] p-4 relative shadow-2xl border border-white/60">
             <div className="w-full h-full rounded-[180px] overflow-hidden bg-bisou-rose relative group">
-              <img src={data.imagemBoloUrl} 
-              fetchPriority="high" 
-              alt="Bolo Destaque" 
-              className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-1000 ease-out" />
+              <img src={data.imagemBoloUrl}
+                fetchPriority="high"
+                alt="Bolo Destaque"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-1000 ease-out" />
               <div className="absolute inset-0 bg-bisou-dark/10 mix-blend-overlay pointer-events-none" />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-bisou-terracota text-bisou-bg w-32 h-32 rounded-full flex flex-col items-center justify-center p-2 shadow-lg animate-[spin_20s_linear_infinite] z-10">
-              <span className="text-[10px] uppercase tracking-widest font-bold text-center leading-tight">★ 100% ARTESANAL ★ FEITO HOJE</span>
+            <div className="absolute -bottom-6 -left-6 bg-bisou-terracota text-bisou-bg w-32 h-32 rounded-full flex flex-col items-center justify-center p-2 shadow-lg z-10">
+              <span className="text-[10px] uppercase tracking-widest font-bold text-center leading-tight">★ 100% ARTESANAL SOB-MEDIDA ★</span>
             </div>
           </div>
         </div>

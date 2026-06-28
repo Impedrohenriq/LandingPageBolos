@@ -36,7 +36,7 @@ export interface Hero {
 export async function getHero(): Promise<Hero | null> {
   const query = `*[_type == "hero"][0]{
     tag, titulo1, titulo2, titulo3, descricao,
-    "imagemBoloUrl": imagemBolo.asset->url+ "?w=1200&auto=format"
+    "imagemBoloUrl": imagemBolo.asset->url+ "?w=900&auto=format"
   }`
   return await sanity.fetch(query);
 }
@@ -48,7 +48,7 @@ export async function getBolos(): Promise<Bolo[]> {
     nome,
     preco,
     descricao,
-    "imagemUrl": imagem.asset->url+ "?w=700&auto=format"
+    "imagemUrl": imagem.asset->url+ "?w=696&auto=format"
   }`
   return await sanity.fetch(query);
 }
