@@ -7,7 +7,6 @@ import 'swiper/css/navigation';
 import { getBolosCarrossel, type Bolo } from '../../sanity';
 
 export function Services() {
-  // O React começa com uma lista vazia, e depois preenche com os dados do Sanity
   const [bolos, setBolos] = useState<Bolo[]>([]);
 
   useEffect(() => {
@@ -33,10 +32,7 @@ export function Services() {
         >
           {bolos.map((bolo) => (
             <SwiperSlide key={bolo._id} className="group cursor-pointer">
-              {/* Imagem com efeito Hover e Botão Detalhes */}
-              <div className="relative aspect-3/4 overflow-hidden bg-bisou-rose">
-
-                {/* AQUI ESTÁ A MÁGICA: puxando imagemUrl do Sanity */}
+              <a href="#contato" className="block relative aspect-3/4 overflow-hidden bg-bisou-rose">
                 {bolo.imagemUrl && (
                   <img
                     src={bolo.imagemUrl}
@@ -44,25 +40,18 @@ export function Services() {
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 aspect-3/4"
                   />
                 )}
-
-                {/* Botão Detalhes (só aparece no hover) */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-bisou-dark/20 backdrop-blur-[2px]">
-                  <button className="bg-white text-bisou-dark px-8 py-3 uppercase text-[10px] tracking-[0.2em] font-bold hover:bg-bisou-terracota hover:text-white transition-colors">
-                    <a href="#contato" className="hover:text-bisou-terracota transition-colors">Ver Detalhes</a>
-                  </button>
+                  <span className="bg-white text-bisou-dark px-8 py-3 uppercase text-[10px] tracking-[0.2em] font-bold">
+                    Ver Detalhes
+                  </span>
                 </div>
-              </div>
+              </a>
 
-              {/* Nome e Preço */}
               <div className="p-6 text-center">
                 <h3 className="font-serif text-xl text-bisou-dark">{bolo.nome}</h3>
-
-                {/* Se o preço existir, formata com "R$". Senão, "Sob consulta" */}
                 <p className="font-sans italic text-sm text-bisou-terracota mt-1">
                   {bolo.preco ? `R$ ${bolo.preco}` : 'Sob consulta'}
                 </p>
-
-                {/* A descrição vem do Sanity (lembra de preencher lá no painel!) */}
                 <p className="text-[11px] text-bisou-dark/60 mt-4 leading-relaxed px-4">
                   {bolo.descricao}
                 </p>
