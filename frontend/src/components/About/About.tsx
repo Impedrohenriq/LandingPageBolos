@@ -27,10 +27,10 @@ export function About() {
           
           {/* Foto Principal (Atrás) */}
           <div className="w-4/5 aspect-3/4 bg-stone-200 overflow-hidden shadow-xl group cursor-pointer relative">
-            {data.imagemUrl ? (
+            {data.imagemPrincipalUrl ? (
               <img 
-                src={data.imagemUrl} 
-                alt="Mãos artesãs Ateliê de Decorações" 
+                src={data.imagemPrincipalUrl} 
+                alt="Mãos artesãs Bendito Bolo" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out"
               />
             ) : (
@@ -41,9 +41,9 @@ export function About() {
 
           {/* Foto Secundária Sobreposta */}
           <div className="absolute -bottom-10 right-0 sm:right-4 w-3/5 aspect-square bg-stone-300 overflow-hidden shadow-2xl border-8 border-bisou-bg group cursor-pointer">
-            {data.imagemUrl ? (
+            {data.imagemSecundariaUrl ? (
               <img 
-                src={data.imagemUrl} 
+                src={data.imagemSecundariaUrl} 
                 alt="Detalhe do bolo" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out"
               />

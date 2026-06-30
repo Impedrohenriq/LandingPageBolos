@@ -17,11 +17,21 @@ export const aboutType = defineType({
       description: 'Escreva a história da marca ou do confeiteiro(a).'
     }),
     defineField({
-      name: 'imagem',
-      title: 'Foto de Perfil',
+      name: 'imagemPrincipal',
+      title: 'Foto Principal (frente)',
       type: 'image',
+      description: 'Foto maior, exibida na frente na seção Sobre.',
       options: {
         hotspot: true, // Permite que a cliente escolha o ponto de foco da foto
+      }
+    }),
+    defineField({
+      name: 'imagemSecundaria',
+      title: 'Foto Secundária (atrás)',
+      type: 'image',
+      description: 'Foto menor, exibida sobreposta atrás/ao lado da principal.',
+      options: {
+        hotspot: true,
       }
     })
   ]

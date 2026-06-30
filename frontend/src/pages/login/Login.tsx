@@ -10,7 +10,7 @@ export function Login() {
         <div className="absolute top-0 left-12 right-12 h-[2px] bg-bisou-terracota" />
 
         <div>
-          <span className="font-script text-bisou-terracota text-4xl block -mb-2">Ateliê de Decorações</span>
+          <span className="font-script text-bisou-terracota text-4xl block -mb-2">Bendito Bolo</span>
           <h1 className="font-serif text-3xl tracking-widest uppercase text-bisou-dark font-light">
             Acesso Restrito
           </h1>

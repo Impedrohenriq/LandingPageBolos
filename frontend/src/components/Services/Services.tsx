@@ -36,7 +36,7 @@ export function Services() {
                 {bolo.imagemUrl && (
                   <img
                     src={bolo.imagemUrl}
-                    alt={bolo.nome}
+                    alt="Bolo do ateliê"
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 aspect-3/4"
                   />
                 )}
@@ -46,16 +46,6 @@ export function Services() {
                   </span>
                 </div>
               </a>
-
-              <div className="p-6 text-center">
-                <h3 className="font-serif text-xl text-bisou-dark">{bolo.nome}</h3>
-                <p className="font-sans italic text-sm text-bisou-terracota mt-1">
-                  {bolo.preco ? `R$ ${bolo.preco}` : 'Sob consulta'}
-                </p>
-                <p className="text-[11px] text-bisou-dark/60 mt-4 leading-relaxed px-4">
-                  {bolo.descricao}
-                </p>
-              </div>
             </SwiperSlide>
           ))}
         </Swiper>

@@ -6,26 +6,14 @@ export const boloType = defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'nome',
-      title: 'Nome do Bolo',
-      type: 'string',
-      validation: (rule) => rule.required(),
-    }),
-    defineField({
       name: 'slug',
       title: 'Slug (URL)',
       type: 'slug',
       options: {
-        source: 'nome',
+        source: 'imagem.asset._ref',
         maxLength: 96,
       },
       validation: (rule) => rule.required(),
-    }),
-    defineField({
-      name: 'preco',
-      title: 'Preço (R$)',
-      type: 'number',
-      validation: (rule) => rule.required().positive(),
     }),
     defineField({
       name: 'imagem',
@@ -35,12 +23,6 @@ export const boloType = defineType({
         hotspot: true, // Permite recortar a foto no próprio Sanity
       },
       validation: (rule) => rule.required(),
-    }),
-    defineField({
-      name: 'descricao',
-      title: 'Descrição Curta',
-      type: 'text',
-      rows: 3,
     }),
     defineField({
       name: 'destaqueCarrossel',

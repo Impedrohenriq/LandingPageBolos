@@ -18,7 +18,7 @@ export function Gallery() {
 
         <div className="mb-20 flex flex-col items-center text-center border-b border-bisou-border pb-12">
           <span className="font-script text-bisou-terracota text-4xl block -mb-1">
-            @decorações
+            @BenditoBolo
           </span>
           <h2 className="text-4xl sm:text-5xl font-serif font-light uppercase tracking-widest text-bisou-dark">
             Diário 
@@ -46,7 +46,7 @@ export function Gallery() {
                 <a href="#contato" className="block w-full h-full">
                   <img 
                     src={item.imagemUrl} 
-                    alt={item.legenda || 'Foto do Ateliê'} 
+                    alt="Foto do Ateliê" 
                     className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-1000 ease-out"
                   />
                 </a>
@@ -59,12 +59,6 @@ export function Gallery() {
                     <a href="#contato" className="hover:text-bisou-terracota transition-colors">🛒</a>
                   </span>
                 </div>
-
-                {item.legenda && (
-                  <span className="font-serif italic text-xl tracking-wide transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75 ease-out">
-                    {item.legenda}
-                  </span>
-                )}
 
                 <span className="text-[9px] uppercase tracking-[0.2em] text-bisou-rose/80 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-150">
                   Ateliê

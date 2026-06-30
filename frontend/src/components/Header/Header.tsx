@@ -16,7 +16,7 @@ export function Header() {
 
         {/* Logo central */}
         <div className="text-center absolute left-1/2 -translate-x-1/2">
-          <span className="font-script text-bisou-terracota text-2xl block -mb-3">Ateliê de</span>
+          <span className="font-script text-bisou-terracota text-2xl block -mb-3">Bendito Bolo</span>
           <span className="font-serif text-3xl font-bold tracking-widest uppercase">Decorações</span>
         </div>
 
