@@ -19,7 +19,7 @@ export function Contact() {
           
           {/* Botão WhatsApp */}
           <a 
-            href="https://wa.me/5511999999999" 
+            href="https://wa.me/5532988694064" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group relative border border-bisou-dark py-6 px-8 hover:bg-bisou-dark transition-all duration-500"
@@ -30,7 +30,7 @@ export function Contact() {
 
           {/* Botão Instagram */}
           <a 
-            href="https://instagram.com/altmann" 
+            href="https://www.instagram.com/rafaellapereiravs?igsh=MTdlcmEyaWZxazVhZA==" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group relative border border-bisou-dark py-6 px-8 hover:bg-bisou-dark transition-all duration-500"
